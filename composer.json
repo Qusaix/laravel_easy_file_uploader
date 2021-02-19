@@ -1,0 +1,22 @@
+{
+    "name": "qusai/easy-upload-files",
+    "description": "to make uploading files very easy",
+    "type": "library",
+    "require": {
+        "illuminate/support": "8.x-dev",
+        "php": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qusai\\Upload\\":"src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Qusaix",
+            "email": "qusaiznemat6@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
