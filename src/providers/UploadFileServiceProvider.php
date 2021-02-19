@@ -13,7 +13,7 @@ class UploadFileServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd('man here');
+       
     }
 
     /**
