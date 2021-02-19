@@ -3,7 +3,7 @@
     "description": "to make uploading files very easy",
     "type": "library",
     "require": {
-        "illuminate/support": "5.5.0",
+        "illuminate/support": "7.7.0",
         "php": "^7.3"
     },
     "autoload": {
