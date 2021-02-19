@@ -5,7 +5,7 @@ namespace Qusai\Upload;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Storage;
 
-class UploadFiles {
+trait UploadFiles {
     public function uplaodFile($disk,$folderName,$file)
     {   #ALL THE AVALIBLE DISKS.
         $disks = ['local','public','public_uploads','s3'];
