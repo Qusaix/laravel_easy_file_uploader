@@ -23,8 +23,16 @@ simple package for uploading files in laravel frame-work.
 ```php
         use Qusai\Upload\UploadFiles;
 
-        $upload = new UploadFiles();
-        $upload->uplaodFile('public_uploads','FOLDERNAME',$request->file('FILE INPUT NAME IN THE REQUEST'));
+        class className extends Controller {
+                ...
+                use UploadFiles;
+
+                public function functionName(Request $request)
+                {
+                        .....
+                        $upload->uplaodFile('public_uploads','FOLDERNAME',$request->file('FILE INPUT NAME IN THE REQUEST'));
+                }
+        }
 ```
 
 GOOD LUCK:)
