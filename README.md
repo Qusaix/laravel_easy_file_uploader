@@ -6,11 +6,11 @@ simple package for uploading files in laravel frame-work.
 
 # HOW TO USE
 - INSTALL THE PACKAGE THROW THIS COMMAND `composer require qusai/easy-upload-files` 
-- ADD THE SERVEICE PROVIDER IN THE `app.php` AND ADD THIS
+- ADD THE SERVEICE PROVIDER IN THE `app.php`
 ```php 
         Qusai\Upload\Providers\UploadFileServiceProvider::class 
 ```
-- GO TO THE `filesystem.php` AND ADD THIS CODE INIT SO THE PACKAGE WORK PROPERLY
+- GO TO THE `filesystem.php` AND ADD THIS CODE INIT SO THE PACKAGE WILL WORK PROPERLY
 ```php
        'public_uploads' => [
             'driver' => 'local',
@@ -19,7 +19,7 @@ simple package for uploading files in laravel frame-work.
              'visibility' => 'public'
         ]
 ```
-- WHNE USEs THE UPLOAD FUNCTION YOU CAN CALL IT LIEK THIS 
+- WHEN YOU NEED TO USE THIS PACKAGE YOU CAN CALL IT LIKE THIS 
 ```php
         use Qusai\Upload\UploadFiles;
 
