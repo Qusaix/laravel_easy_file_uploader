@@ -30,7 +30,7 @@ simple package for uploading files in laravel frame-work.
                 public function functionName(Request $request)
                 {
                         .....
-                        $upload->uplaodFile('public_uploads','FOLDERNAME',$request->file('FILE INPUT NAME IN THE REQUEST'));
+                        $this->uplaodFile('public_uploads','FOLDERNAME',$request->file('FILE INPUT NAME IN THE REQUEST'));
                 }
         }
 ```

@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Storage;
 trait UploadFiles {
     public function uplaodFile($disk,$folderName,$file)
     {   #ALL THE AVALIBLE DISKS.
-        $disks = ['local','public','public_uploads','s3'];
-        if(!in_array($disk,$disks)) throw new \Exception('THERE IS NO DISK WITH THIS NAME');
+        $disks = ['public_uploads'];
+        if(!in_array($disk,$disks)) throw new \Exception('Please Add public_uploads Disk to Your File System');
         #CHECK IF THE GIVEN FOLDER IT DOSE EXIST IF NOT CREATE ONE.
         if(!Storage::disk($disk)->exists($folderName)) Storage::disk($disk)->makeDirectory($folderName);
         #CHECK IF THE FILE IS VALID.
