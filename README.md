@@ -12,7 +12,7 @@ simple package for uploading files in laravel frame-work.
 ```
 - GO TO THE `filesystem.php` AND ADD THIS CODE INIT SO THE PACKAGE WILL WORK PROPERLY
 ```php
-       'public_uploads' => [
+       'easy_file_uploader' => [
             'driver' => 'local',
             'root'   => public_path() . '/',
              'url' => env('APP_URL'). '/',
@@ -30,7 +30,7 @@ simple package for uploading files in laravel frame-work.
                 public function functionName(Request $request)
                 {
                         .....
-                        $this->uplaodFile('public_uploads','FOLDERNAME',$request->file('FILE INPUT NAME IN THE REQUEST'));
+                        $this->uplaodFile('FOLDERNAME',$request->file('FILE INPUT NAME IN THE REQUEST'));
                 }
         }
 ```
